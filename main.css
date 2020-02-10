@@ -1,0 +1,100 @@
+*{
+    list-style: none;
+}
+
+#btn{
+    background-color: grey;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'Nova Mono', monospace;
+    font-weight: 400;
+    color: whitesmoke;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    background: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-family: 'Girassol', cursive;
+    font-weight: 800;
+    color: whitesmoke;
+    font-weight: 20;
+}
+
+#outputval , #inputval{
+    border-radius: 5px;
+    margin: 10px;
+    size: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #403f3c;
+    border: none;
+    text-align: center;
+    color:whitesmoke;
+    height: 40px;
+    width: 400px;
+}
+
+body {
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+@media screen and (max-width: 411px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    #btn{
+        background-color: grey;
+        border-radius: 5px;
+        font-size: 15px;
+        font-family: 'Nova Mono', monospace;
+        font-weight: 400;
+        color: whitesmoke;
+        width: 150px;
+        height: 30px;
+        cursor: pointer;
+        border: 1px solid whitesmoke;
+        background: none;
+    }
+
+    #outputval , #inputval{
+        border-radius: 5px;
+        margin: 10px;
+        size: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: #403f3c;
+        border: none;
+        text-align: center;
+        color:whitesmoke;
+        height: 30px;
+        width: 300px;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-family: 'Girassol', cursive;
+        font-weight: 800;
+        color: whitesmoke;
+        font-weight: 20;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mi pagina</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Celsius to Fahrenheit</h1>
+        <div class="container">
+            <input type="text" name="inputval" id="inputval" value="">
+            <button onclick="to_F(document.getElementById('inputval').value,document.getElementById('outputval').value)" id="btn">Convertir</button>
+            <input type="text" id="outputval" value="">
+        </div>
+        <script>
+            function to_F(input,output){
+                if (document.getElementById("outputval").value == ""){
+                    document.getElementById("outputval").value = (Math.round((32 + (1.8 * input))*100)/100).toFixed(2);
+                }
+                if (document.getElementById("inputval").value == ""){
+                    document.getElementById("inputval").value = (Math.round(((output - 32) * (0.55))*100)/100).toFixed(2);  
+                }
+            }
+        </script>
+    </body>
